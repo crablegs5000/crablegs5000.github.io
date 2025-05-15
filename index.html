@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glowing Lime Green Button</title>
+  <style>
+    .favorite.styled {
+      background-color: #32cd32; /* lime green */
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 8px 2px #32cd32;
+      transition: box-shadow 0.3s ease, transform 0.1s ease;
+      outline: none;
+    }
+
+    .favorite.styled:hover {
+      box-shadow: 0 0 12px 4px #76ff03; /* brighter lime glow */
+    }
+
+    .favorite.styled:active {
+      transform: scale(0.95); /* shrink on click */
+      box-shadow: 0 0 6px 2px #32cd32;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="favorite styled" type="button">Add to favorites</button>
+
+</body>
+</html>
