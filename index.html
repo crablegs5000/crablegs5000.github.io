@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open File Buttons</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .favorite.styled {
+      background-color: #32cd32;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 8px 2px #32cd32;
+      transition: box-shadow 0.3s ease, transform 0.1s ease;
+      outline: none;
+      min-width: 160px;
+      text-align: center;
+    }
+
+    .favorite.styled:hover {
+      box-shadow: 0 0 12px 4px #76ff03;
+    }
+
+    .favorite.styled:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 6px 2px #32cd32;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <button class="favorite styled" onclick="window.open('files/Bacon May Die.html', '_blank')">
+      Bacon May Die
+    </button>
+
+    <button class="favorite styled" onclick="window.open('files/Balatro.html', '_blank')">
+      Balatro
+    </button>
+
+    <button class="favorite styled" onclick="window.open('files/Basket Random.html', '_blank')">
+      Basket Random
+    </button>
+
+    <button class="favorite styled" onclick="window.open('files/Bowmasters.html', '_blank')">
+      Bowmasters
+    </button>
+  
+    <button class="favorite styled" onclick="window.open('files/Drive Mad.html', '_blank')">
+      Drive Mad
+    </button>
+  
+</div>
+
+</body>
+</html>
