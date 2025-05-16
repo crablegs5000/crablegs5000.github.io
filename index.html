@@ -3,37 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Open File Buttons</title>
+  <title>Games with Images</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 40px;
       background-color: #121212;
       font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
     }
 
-    .button-container {
+    .button-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 32px;
       justify-content: center;
+    }
+
+    .game-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 180px;
+    }
+
+    .game-image {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 2px #32cd32;
+      margin-bottom: 12px;
     }
 
     .favorite.styled {
       background-color: #32cd32;
       color: white;
       border: none;
-      padding: 12px 24px;
-      font-size: 18px;
+      padding: 12px 18px;
+      font-size: 16px;
       border-radius: 8px;
       cursor: pointer;
       box-shadow: 0 0 8px 2px #32cd32;
       transition: box-shadow 0.3s ease, transform 0.1s ease;
       outline: none;
-      min-width: 160px;
+      width: 100%;
       text-align: center;
     }
 
@@ -49,28 +63,42 @@
 </head>
 <body>
 
-  <div class="button-container">
-    <button class="favorite styled" onclick="window.open('files/Bacon May Die.html', '_blank')">
-      Bacon May Die
-    </button>
+  <div class="button-grid">
+    <div class="game-block">
+      <img src="files/bacon.jpg" alt="Bacon May Die" class="game-image">
+      <button class="favorite styled" onclick="window.open('files/Bacon May Die.html', '_blank')">
+        Bacon May Die
+      </button>
+    </div>
 
-    <button class="favorite styled" onclick="window.open('files/Balatro.html', '_blank')">
-      Balatro
-    </button>
+    <div class="game-block">
+      <img src="files/balatro.jpg" alt="Balatro" class="game-image">
+      <button class="favorite styled" onclick="window.open('files/Balatro.html', '_blank')">
+        Balatro
+      </button>
+    </div>
 
-    <button class="favorite styled" onclick="window.open('files/Basket Random.html', '_blank')">
-      Basket Random
-    </button>
+    <div class="game-block">
+      <img src="files/basket.jpg" alt="Basket Random" class="game-image">
+      <button class="favorite styled" onclick="window.open('files/Basket Random.html', '_blank')">
+        Basket Random
+      </button>
+    </div>
 
-    <button class="favorite styled" onclick="window.open('files/Bowmasters.html', '_blank')">
-      Bowmasters
-    </button>
-  
-    <button class="favorite styled" onclick="window.open('files/Drive Mad.html', '_blank')">
-      Drive Mad
-    </button>
-  
-</div>
+    <div class="game-block">
+      <img src="files/bowmasters.jpg" alt="Bowmasters" class="game-image">
+      <button class="favorite styled" onclick="window.open('files/Bowmasters.html', '_blank')">
+        Bowmasters
+      </button>
+    </div>
+
+    <div class="game-block">
+      <img src="files/drivemad.jpg" alt="Drive Mad" class="game-image">
+      <button class="favorite styled" onclick="window.open('files/Drive Mad.html', '_blank')">
+        Drive Mad
+      </button>
+    </div>
+  </div>
 
 </body>
 </html>
